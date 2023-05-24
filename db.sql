@@ -1,8 +1,17 @@
+CREATE DATABASE mercado;
+
+USE mercado;
+
+CREATE TABLE produto (
+	codProd INT NOT NULL,
+	descricao TEXT NOT NULL,
+	valor FLOAT NOT NULL,
+	vencimento DATE NOT NULL,
+)
+
 CREATE TABLE movimento (
 	codProd INT NOT NULL,
 	tipo VARCHAR(1) NOT NULL,
-	qtd INT NOT NULL,
+	qnt INT NOT NULL,
 	dataMov TIMESTAMP  NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
-
-ALTER TABLE movimento RENAME COLUMN qtd TO qnt;
