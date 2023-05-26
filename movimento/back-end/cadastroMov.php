@@ -1,15 +1,15 @@
 <?php
 	include_once "./includes.php";
 
-	$cadProd = new CadProd();
+	$cadMov = new CadMov();
 
-	$cadProd->setCodProd(filter_input(INPUT_GET, 'codProd', FILTER_VALIDATE_INT));
-	$cadProd->setQnt(filter_input(INPUT_GET, 'qnt', FILTER_VALIDATE_INT));
-	$cadProd->setTipo(filter_input(INPUT_GET, 'tipo'));
+	$cadMov->setCodProd(filter_input(INPUT_GET, 'codProd', FILTER_VALIDATE_INT));
+	$cadMov->setQnt(filter_input(INPUT_GET, 'qnt', FILTER_VALIDATE_INT));
+	$cadMov->setTipo(filter_input(INPUT_GET, 'tipo'));
 
 // FormCad 
 	if(isset($_GET['insertMov'])) {
-		echo insertMov($connect, $cadProd);
+		echo insertMov($connect, $cadMov);
 	} elseif(isset($_GET['listEntrada'])) {
 		echo listEntrada($connect);
 	} elseif(isset($_GET['listSaida'])) {

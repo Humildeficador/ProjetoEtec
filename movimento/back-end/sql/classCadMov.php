@@ -1,5 +1,5 @@
 <?php
-	class CadProd {
+	class CadMov {
 		private $codProd;
 		private $qnt;
 		private $tipo;
