@@ -30,8 +30,4 @@ CREATE TABLE fornecedor (
 	cnpj VARCHAR(11) NOT NULL,
 	cel VARCHAR(12) NOT NULL,
 	cep VARCHAR(8) NOT NULL
-<<<<<<< HEAD
 );
-=======
-);
->>>>>>> a38857ac9069812fccdd46e26d8ba4604af6bf3d
