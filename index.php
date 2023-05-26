@@ -14,40 +14,72 @@
 		<main class="main-content">
 			<header class="logo">MENU</header>
 			<div class="content">
-				<a class="prod">Produtos</a>
-				<a class="mov">Movimento</a>
+				<a class="buttons" data-form="prod">Produtos</a>
+				<a class="buttons" data-form="mov">Movimento</a>
+				<a class="buttons" data-form="cliente">Cliente</a>
+				<a class="buttons" data-form="fornc">Fornecedor</a>
 			</div>
 			<div class="form-box">
-				<form action="./produto/back-end/cadastroProd.php" method="GET" class="cont-menu formProd">
+
+				<form action="./produto/back-end/cadastroProd.php" method="GET" class="forms" id="prod">
+					<div class="title">Produtos</div>
 					<ul class="menu">
 						<li><a href="./produto/formCad/formCad.php">Cadastro</a></li>
-						<li class="list">
-							<a href="#">Listar <i class='bx bx-chevron-down'></i></a>
-							<ul class="sub-menu list-menu">
+						<li class="subs-menus" data-list="list-prod">
+							<a>Lista <i class='bx bx-chevron-down'></i></a>
+							<ul class="lists-menus" id="list-prod">
 								<li><button name="listCod">por Código</button></li>
 								<li><button name="listProd">por Descrição</button></li>
+								<li><a href="./produto/formVenc/formVenc.php">por Vencimento</a></li>
 							</ul>
 						</li>
-						<li><a href="./produto/formVenc/formVenc.php">Listar por vencimento</a></li>
 					</ul>
 				</form>
-				<form action="./movimento/back-end/cadastroMov.php" class="cont-menu formMov">
+
+				<form action="./movimento/back-end/cadastroMov.php" method="GET" class="forms" id="mov">
+					<div class="title">Movimento</div>
 					<ul class="menu">
 						<li><a href="./movimento/formMov/formMov.php">Cadastro</a></li>
-						<li class="est">
-							<a href="#">Listar Est. <i class='bx bx-chevron-down'></i></a>
-							<ul class="sub-menu est-menu">
-								<li><button name="listEntrada">Estrada</button></li>
-								<li><button name="listSaida">Saída</button></li>
+						<li class="subs-menus" data-list="list-mov">
+							<a>Lista <i class='bx bx-chevron-down'></i></a>
+							<ul class="lists-menus" id="list-mov">
+								<li><button name="listEntrada">por Estrada</button></li>
+								<li><button name="listSaida">por Saída</button></li>
 							</ul>
 						</li>
 					</ul>
 				</form>
+
+				<form action="./cliente/back-end/cadastroClient.php" method="GET" class="forms" id="cliente">
+					<div class="title">Cliente</div>
+					<ul class="menu">
+						<li><a href="./cliente/formCliente/formCliente.php">Cadastro</a></li>
+						<li class="subs-menus" data-list="list-cliente">
+							<a>Listar <i class='bx bx-chevron-down'></i></a>
+							<ul class="lists-menus" id="list-cliente">
+								<li><button name="listClient">Clientes</button></li>
+							</ul>
+						</li>
+					</ul>
+				</form>
+
+				<form class="forms" id="fornc">
+					<div class="title">Fornecedores</div>
+					<ul class="menu">
+						<li><a href="./fornecedor/formFornc/formFornc.php">Cadastro</a></li>
+						<li class="subs-menus" data-list="list-fornc">
+							<a>Lista <i class='bx bx-chevron-down'></i></a>
+							<ul class="lists-menus" id="list-fornc">
+								<li><button name="listFornc">Fornecedores</button></li>
+							</ul>
+						</li>
+					</ul>
+				</form>
+
 			</div>
 		</main>
 	</div>
 </body>
-<!-- <script src="./produto/js/script.js"></script> -->
-<script src="./produto/js/script.js"></script>
+<script src="./js/script.js"></script>
 
 </html>
