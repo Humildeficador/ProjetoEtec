@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import url('https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css');
+
+:root {
+	--af-white: #edf2f4ff;
+	--black: #1b1b1eff;
+	--blue: #12A9FF;
+	--dark-purple: #160D22;
+	--purple: #2D1F3E;
+	--light-purple: #b7a7ca;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	color: var(--af-white);
+	list-style: none;
+	text-decoration: none;
+}
+
+body {
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+}
+
+.container {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--blue);
+}
+
+.main-content {
+	display: grid;
+	grid-template-rows: min-content max-content;
+	grid-template-areas: "h" "p";
+	gap: 2em;
+	min-width: 900px;
+	max-width: 90%;
+	max-height: 95%;
+	background-color: var(--dark-purple);
+	border-radius: 2.5em;
+	padding: 1.5em 1em;
+}
+
+.logo {
+	grid-area: h;
+	width: 100%;
+	text-align: center;
+	font-size: 2em;
+	font-weight: 500;
+}
+
+.logo>p {
+	color: #00e3d8;
+}
+
+.content {
+	grid-area: p;
+	max-height: 98%;
+	width: 100%;
+	border-radius: 1.5em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.content table, th, td {
+	border:2px solid var(--purple);
+	padding: .125em .125em .125em .5em;
+	border-collapse: collapse;
+}
+
+.content th {
+	text-align: initial;
+	color: #00e3d8;
+}
