@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
 	<meta charset="UTF-8">
@@ -23,7 +23,7 @@
 					</div>
 					<div class="input-box">
 						<label for="descricao">Descrição</label>
-						<input type="text" name="descricao" maxlength="100" required>
+						<input type="text" name="descricao" maxlength="30" required>
 					</div>
 				</div>
 
