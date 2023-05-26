@@ -18,16 +18,16 @@ CREATE TABLE movimento (
 
 CREATE TABLE cliente (
 	codCliente INT NOT NULL,
-	nome VARCHAR (60) NOT NULL,
-    cpf INT (11) NOT NULL,
-    celular INT (12) NOT NULL,
-    cep INT (8) NOT NULL
+	nome VARCHAR(60) NOT NULL,
+	cpf VARCHAR(11) NOT NULL,
+	cel VARCHAR(12) NOT NULL,
+	cep VARCHAR(8) NOT NULL
 );
 
 CREATE TABLE fornecedor (
 	codFornecedor INT NOT NULL,
-    nome VARCHAR (60) NOT NULL,
-    cnpj INT (11) NOT NULL,
-    celular INT (12) NOT NULL,
-    cep INT (8) NOT NULL
+	nome VARCHAR(60) NOT NULL,
+	cnpj VARCHAR(11) NOT NULL,
+	cel VARCHAR(12) NOT NULL,
+	cep VARCHAR(8) NOT NULL
 );
