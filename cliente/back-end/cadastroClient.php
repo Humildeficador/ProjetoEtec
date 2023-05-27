@@ -16,7 +16,7 @@ if (isset($_GET['listClient'])) {
 
 // formProd
 if (isset($_GET['insertCliente'])) {
-	echo insertProd($connect, $cadCliente);
+	echo insertCliente($connect, $cadCliente);
 } elseif (isset($_GET['removeCliente'])) {
 	echo removeProd($connect, $cadCliente);
 }
