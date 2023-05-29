@@ -3,7 +3,6 @@
 		try {
 			$command = $connect->prepare('SELECT * FROM cliente ORDER BY codCliente ASC');
 			$command->execute();
-			$result = $command->fetchAll(PDO::FETCH_ASSOC);
 
 			if($command->execute()) {
 				echo '<link rel="stylesheet" href="css/tableList-style.css">';

@@ -27,7 +27,7 @@ CREATE TABLE cliente (
 CREATE TABLE fornecedor (
 	codFornecedor INT NOT NULL,
 	nome VARCHAR(60) NOT NULL,
-	cnpj VARCHAR(11) NOT NULL,
+	cnpj VARCHAR(14) NOT NULL,
 	cel VARCHAR(12) NOT NULL,
 	cep VARCHAR(8) NOT NULL
 );

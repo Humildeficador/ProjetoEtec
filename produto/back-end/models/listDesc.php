@@ -3,7 +3,6 @@
 		try {
 			$command = $connect->prepare('SELECT * FROM produto ORDER BY descricao ASC');
 			$command->execute();
-			$result = $command->fetchAll(PDO::FETCH_ASSOC);
 
 			if($command->execute()) {
 				echo '<link rel="stylesheet" href="css/tableList-style.css">';
