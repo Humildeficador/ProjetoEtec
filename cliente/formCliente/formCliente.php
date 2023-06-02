@@ -30,16 +30,24 @@
 							<label for="cel">Celular</label>
 							<input type="number" name="cel" max="999999999999" required autocomplete="off">
 						</div>
+						<div class="input-box">
+							<label for="codCliente">Código do cliente</label>
+							<input type="number" name="codCliente" min="1" max="9999999" required autocomplete="off">
+						</div>
 					</div>
 
 					<div class="input-group">
 						<div class="input-box">
 							<label for="cep">CEP</label>
-							<input type="number" name="cep" max="99999999" required onchange="buscarCep(this.value)" autocomplete="off">
+							<input type="number" name="cep" max="99999999" required onchange='buscarCep(this.value)' autocomplete="off">
 						</div>
 						<div class="input-box">
-							<label for="codCliente">Código do cliente</label>
-							<input type="number" name="codCliente" min="1" max="9999999" required autocomplete="off">
+							<label for="numero">Número</label>
+							<input type="number" name="numero" max="9999999" required autocomplete="off">
+						</div>
+						<div class="input-box">
+							<label for="complemento">Complemento</label>
+							<input type="text" name="complemento" maxlength="30" autocomplete="off">
 						</div>
 					</div>
 				</div>

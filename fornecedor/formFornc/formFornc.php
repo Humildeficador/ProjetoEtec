@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Menu Mercado</title>
-	<link rel="stylesheet" href="css/formCliente-style.css">
+	<link rel="stylesheet" href="css/formFornc-style.css">
 </head>
 
 <body>
@@ -15,7 +15,7 @@
 			<header class="logo">
 				CADASTRO
 			</header>
-			<form class="content" action="../back-end/cadastroClient.php" method="GET">
+			<form class="content" action="../back-end/cadastroFornc.php" method="GET">
 				<div class="input-main">
 					<div class="input-group">
 						<div class="input-box">
@@ -30,6 +30,10 @@
 							<label for="cel">Celular</label>
 							<input type="number" name="cel" max="999999999999" required autocomplete="off">
 						</div>
+						<div class="input-box">
+							<label for="codFornc">Código do fornecedor</label>
+							<input type="number" name="codFornc" min="1" max="9999999" required autocomplete="off">
+						</div>
 					</div>
 
 					<div class="input-group">
@@ -38,8 +42,12 @@
 							<input type="number" name="cep" max="99999999" required onchange="buscarCep(this.value)" autocomplete="off">
 						</div>
 						<div class="input-box">
-							<label for="codFornc">Código do fornecedor</label>
-							<input type="number" name="codFornc" min="1" max="9999999" required autocomplete="off">
+							<label for="numero">Número</label>
+							<input type="number" name="numero" max="9999999" required autocomplete="off">
+						</div>
+						<div class="input-box">
+							<label for="complemento">Complemento</label>
+							<input type="text" name="complemento" maxlength="30" autocomplete="off">
 						</div>
 					</div>
 				</div>
