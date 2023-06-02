@@ -5,6 +5,8 @@
 		private $cpf;
 		private $cel;
 		private $cep;
+		private $numero;
+		private $complemento;
 
 		//------------------------------
 		public function getcodCliente() {
@@ -40,6 +42,20 @@
 		}
 		public function setCep($x) {
 			$this->cep = $x;
+		}
+		//------------------------------
+		public function getNumero() {
+			return $this->numero;
+		}
+		public function setNumero($x) {
+			$this->numero = $x;
+		}
+		//------------------------------
+		public function getComplemento() {
+			return $this->complemento;
+		}
+		public function setComplemento($x) {
+			$this->complemento = $x;
 		}
 		//------------------------------
 	}
