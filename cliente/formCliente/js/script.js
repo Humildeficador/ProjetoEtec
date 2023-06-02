@@ -1,10 +1,10 @@
-async function buscarCep(cep) {
+function buscarCep(cep) {
 	const textArea = document.querySelector('.text-area')
 	const url = `https://viacep.com.br/ws/${cep}/json/`
 
-	await fetch(url).then(response => {
+	fetch(url).then(async response => {
 		if (response.ok) {
-			response.json().then(data => {
+			await response.json().then(data => {
 				if (data.logradouro != undefined) {
 					textArea.innerHTML =
 						`Rua: ${data.logradouro}<br>
