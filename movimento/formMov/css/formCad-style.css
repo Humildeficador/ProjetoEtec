@@ -77,6 +77,10 @@ body {
 	width: 80%;
 }
 
+.input-group{
+	gap: .5em;
+}
+
 .input-group,
 .radio-date {
 	display: flex;
@@ -126,4 +130,8 @@ body {
 .radio-box input[type="radio"] {
 	margin-right: .5em;
 	accent-color: var(--blue);
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;   
 }

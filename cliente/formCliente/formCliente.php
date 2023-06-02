@@ -20,34 +20,34 @@
 					<div class="input-group">
 						<div class="input-box">
 							<label for="nome">Nome</label>
-							<input type="text" name="nome" maxlength="60" required autocomplete="off">
+							<input type="text" name="nome" id="nome" maxlength="60" required autocomplete="off">
 						</div>
 						<div class="input-box">
 							<label for="cpf">CPF</label>
-							<input type="number" name="cpf" max="99999999999" required autocomplete="off">
+							<input type="number" name="cpf" id="cpf" max="99999999999" required autocomplete="off">
 						</div>
 						<div class="input-box">
 							<label for="cel">Celular</label>
-							<input type="number" name="cel" max="999999999999" required autocomplete="off">
+							<input type="number" name="cel" id="cel" max="999999999999" required autocomplete="off">
 						</div>
 						<div class="input-box">
 							<label for="codCliente">Código do cliente</label>
-							<input type="number" name="codCliente" min="1" max="9999999" required autocomplete="off">
+							<input type="number" name="codCliente" id="codCliente" min="1" max="9999999" required autocomplete="off">
 						</div>
 					</div>
 
 					<div class="input-group">
 						<div class="input-box">
 							<label for="cep">CEP</label>
-							<input type="number" name="cep" max="99999999" required onchange='buscarCep(this.value)' autocomplete="off">
+							<input type="number" name="cep" id="cep" max="99999999" required onchange='buscarCep(this.value)' autocomplete="off">
 						</div>
 						<div class="input-box">
 							<label for="numero">Número</label>
-							<input type="number" name="numero" max="9999999" required autocomplete="off">
+							<input type="number" name="numero" id="numero" max="9999999" required autocomplete="off">
 						</div>
 						<div class="input-box">
 							<label for="complemento">Complemento</label>
-							<input type="text" name="complemento" maxlength="30" autocomplete="off">
+							<input type="text" name="complemento" id="complemento" maxlength="30" autocomplete="off">
 						</div>
 					</div>
 				</div>

@@ -63,7 +63,7 @@
 					</ul>
 				</form>
 
-				<form class="forms" id="fornc">
+				<form action="./fornecedor/back-end/cadastroFornc.php" class="forms" id="fornc">
 					<div class="title">Fornecedores</div>
 					<ul class="menu">
 						<li><a href="./fornecedor/formFornc/formFornc.php">Cadastro</a></li>

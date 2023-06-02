@@ -20,15 +20,15 @@
 					<div class="input-group">
 						<div class="input-box">
 							<label for="codProd">Código do produto</label>
-							<input type="number" name="codProd" min="1" max="9999999" required>
+							<input type="number" name="codProd" id="codProd" min="1" max="9999999" required autocomplete="off">
 						</div>
 						<div class="input-box">
 							<label for="qnt">Quantidade</label>
-							<input type="number" name="qnt" min="1" max="9999999" required>
+							<input type="number" name="qnt" id="qnt" min="1" max="9999999" required autocomplete="off">
 						</div>
 						<div class="input-box">
 							<label for="cod">Código</label>
-							<input type="number" name="cod" min="1" max="9999999" required>
+							<input type="number" name="cod" id="cod" min="1" max="9999999" required autocomplete="off">
 						</div>
 					</div>
 					<div class="radio-date">

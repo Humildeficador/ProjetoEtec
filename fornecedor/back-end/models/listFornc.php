@@ -1,10 +1,11 @@
 <?php 
 	function listFornc($connect) {
 		try {
-			$command = $connect->prepare('SELECT * FROM cliente ORDER BY codCliente ASC');
+			$command = $connect->prepare('SELECT * FROM fornecedor ORDER BY codFornecedor ASC');
 			$command->execute();
 
 			if($command->execute()) {
+				echo '<html lang="pt-BR">';
 				echo '<link rel="stylesheet" href="css/tableList-style.css">';
 				echo '<div class="container">';
 				echo '<main class="main-content">';
@@ -21,6 +22,12 @@
 				echo "<th>CNPJ";
 				echo "<th>Celular";
 				echo "<th>CEP";
+				echo "<th>Rua";
+				echo "<th>Número";
+				echo "<th>Complemento";
+				echo "<th>Bairro";
+				echo "<th>Cidade";
+				echo "<th>UF";
 				echo "<tbody>";
 				$result = $command->fetchAll(PDO::FETCH_OBJ);
 
@@ -32,6 +39,12 @@
 						<td>$fornc->cnpj
 						<td>$fornc->cel
 						<td>$fornc->cep
+						<td>$fornc->rua
+						<td>$fornc->numero
+						<td>$fornc->complemento
+						<td>$fornc->bairro
+						<td>$fornc->cidade
+						<td>$fornc->UF
 					<tr/>"; 
 				}
 			}

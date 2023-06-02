@@ -7,6 +7,7 @@
 			$command->bindValue(2,$cadProd->getVencimento1());
 			
 			if($command->execute()) {
+				echo '<html lang="pt-BR">';
 				echo '<link rel="stylesheet" href="css/tableList-style.css">';
 				echo '<div class="container">';
 				echo '<main class="main-content">';

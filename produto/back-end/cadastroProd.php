@@ -3,7 +3,7 @@
 
 	$cadProd = new CadProd();
 
-	$cadProd->setCodProd(filter_input(INPUT_GET, 'codProd', FILTER_VALIDATE_INT));
+	$cadProd->setCodProd(filter_input(INPUT_GET, 'codProd', FILTER_SANITIZE_NUMBER_INT));
 	$cadProd->setDescricao(filter_input(INPUT_GET, 'descricao', FILTER_SANITIZE_SPECIAL_CHARS));
 	$cadProd->setValor(filter_input(INPUT_GET, 'valor', FILTER_VALIDATE_FLOAT));
 	$cadProd->setVencimento(filter_input(INPUT_GET, 'vencimento'));

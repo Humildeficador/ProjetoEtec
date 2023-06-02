@@ -19,22 +19,22 @@
 				<div class="input-group">
 					<div class="input-box">
 						<label for="codProd">Código do produto</label>
-						<input type="number" name="codProd" min="1" max="9999999" required>
+						<input type="number" name="codProd" id="codProd" min="1" max="9999999" required autocomplete="off">
 					</div>
 					<div class="input-box">
 						<label for="descricao">Descrição</label>
-						<input type="text" name="descricao" maxlength="30" required>
+						<input type="text" name="descricao" id="descricao" maxlength="30" required autocomplete="off">
 					</div>
 				</div>
 
 				<div class="input-group">
 					<div class="input-box">
 						<label for="valor">Valor</label>
-						<input type="number" name="valor" step="0.01" min="0" max="9999999" required>
+						<input type="number" name="valor" id="valor" step="0.01" min="0" max="9999999" required autocomplete="off">
 					</div>
 					<div class="input-box">
 						<label for="vencimento">Vencimento</label>
-						<input type="date" name="vencimento"required>
+						<input type="date" name="vencimento" id="vencimento" required>
 					</div>
 				</div>
 

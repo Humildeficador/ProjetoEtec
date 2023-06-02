@@ -1,10 +1,11 @@
 <?php 
-	function listCod($connect) {
+	function listCliente($connect) {
 		try {
 			$command = $connect->prepare('SELECT * FROM cliente ORDER BY codCliente ASC');
 			$command->execute();
 
 			if($command->execute()) {
+				echo '<html lang="pt-BR">';
 				echo '<link rel="stylesheet" href="css/tableList-style.css">';
 				echo '<div class="container">';
 				echo '<main class="main-content">';
@@ -21,6 +22,12 @@
 				echo "<th>CPF";
 				echo "<th>Celular";
 				echo "<th>CEP";
+				echo "<th>Rua";
+				echo "<th>Número";
+				echo "<th>Complemento";
+				echo "<th>Bairro";
+				echo "<th>Cidade";
+				echo "<th>UF";
 				echo "<tbody>";
 				$result = $command->fetchAll(PDO::FETCH_OBJ);
 
@@ -32,6 +39,12 @@
 						<td>$cliente->cpf
 						<td>$cliente->cel
 						<td>$cliente->cep
+						<td>$cliente->rua
+						<td>$cliente->numero
+						<td>$cliente->complemento
+						<td>$cliente->bairro
+						<td>$cliente->cidade
+						<td>$cliente->UF
 					<tr/>"; 
 				}
 			}
