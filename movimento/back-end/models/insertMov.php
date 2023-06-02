@@ -1,13 +1,20 @@
 <?php
 	function insertMov($connect, $cadMov) {
 		try {
-			$command = $connect->prepare('INSERT INTO movimento (codProd, tipo, qnt) VALUES (?, ?, ?)');
-
-// 
-			$command->bindValue(1,$cadMov->getCodProd());
-			$command->bindValue(2,$cadMov->getTipo());
-			$command->bindValue(3,$cadMov->getQnt());
-
+			if ($cadMov->getTipo() === "E") {
+				$command = $connect->prepare('INSERT INTO movimento (codProd, tipo, qnt, codFornecedor) VALUES (?, ?, ?, ?)');
+				$command->bindValue(1,$cadMov->getCodProd());
+				$command->bindValue(2,$cadMov->getTipo());
+				$command->bindValue(3,$cadMov->getQnt());
+				$command->bindValue(4,$cadMov->getCod());
+			} else {
+				$command = $connect->prepare('INSERT INTO movimento (codProd, tipo, qnt, codCliente) VALUES (?, ?, ?, ?)');
+				$command->bindValue(1,$cadMov->getCodProd());
+				$command->bindValue(2,$cadMov->getTipo());
+				$command->bindValue(3,$cadMov->getQnt());
+				$command->bindValue(4,$cadMov->getCod());
+			}
+			
 			if ($command->execute()) {
 				$return = 'Produto cadastrado com sucesso!';
 			}

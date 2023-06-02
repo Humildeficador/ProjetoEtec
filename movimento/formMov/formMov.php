@@ -27,7 +27,7 @@
 							<input type="number" name="qnt" min="1" max="9999999" required>
 						</div>
 						<div class="input-box">
-							<label for="qnt">Código</label>
+							<label for="cod">Código</label>
 							<input type="number" name="cod" min="1" max="9999999" required>
 						</div>
 					</div>

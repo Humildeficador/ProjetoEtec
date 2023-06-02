@@ -3,6 +3,7 @@
 		private $codProd;
 		private $qnt;
 		private $tipo;
+		private $cod;
 
 		//------------------------------
 		public function getCodProd() {
@@ -26,4 +27,10 @@
 			$this->tipo = $x;
 		}
 		//------------------------------
+		public function getCod() {
+			return $this->cod;
+		}
+		public function setCod($x) {
+			$this->cod = $x;
+		}
 }

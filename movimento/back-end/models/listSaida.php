@@ -19,6 +19,7 @@
 				echo "<th>Código do Produto";
 				echo "<th>Tipo";
 				echo "<th>Quantidade";
+				echo "<th>Cod Cliente";
 				echo "<th>Data de Movimento";
 				echo "<tbody>";
 				$result = $command->fetchAll(PDO::FETCH_OBJ);
@@ -28,7 +29,8 @@
 					<tr>
 						<td>$produto->codProd
 						<td>$produto->tipo
-						<td>R$ $produto->qnt
+						<td>$produto->qnt
+						<td>$produto->codCliente
 						<td>" . date('d/m/Y',  strtotime($produto->dataMov));"
 					<tr/>"; 
 				}
